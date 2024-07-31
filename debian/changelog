@@ -1,0 +1,108 @@
+ros-humble-rc-dynamics-api (0.10.3-3bookworm) bookworm; urgency=high
+
+  * Replaced usleep by Sleep under Windows
+
+ -- Felix Ruess <felix.ruess@roboception.de>  Thu, 26 Nov 2020 16:00:00 -0000
+
+ros-humble-rc-dynamics-api (0.10.2-3bookworm) bookworm; urgency=high
+
+  * remove build_export_depend on catkin from package.xml
+
+ -- Felix Ruess <felix.ruess@roboception.de>  Sun, 05 Apr 2020 16:00:00 -0000
+
+ros-humble-rc-dynamics-api (0.10.1-3bookworm) bookworm; urgency=high
+
+  * update cpr for support of curl >= 7.62.0
+  * update nlohmann json to 3.7.3
+
+ -- Felix Ruess <felix.ruess@roboception.de>  Fri, 03 Apr 2020 16:00:00 -0000
+
+ros-humble-rc-dynamics-api (0.10.0-3bookworm) bookworm; urgency=high
+
+  * improve exception handling using new NotAvailable
+
+ -- Felix Ruess <felix.ruess@roboception.de>  Tue, 10 Sep 2019 16:00:00 -0000
+
+ros-humble-rc-dynamics-api (0.9.0-3bookworm) bookworm; urgency=high
+
+  * add getCam2ImuTransform
+
+ -- Felix Ruess <felix.ruess@roboception.de>  Tue, 10 Sep 2019 16:00:00 -0000
+
+ros-humble-rc-dynamics-api (0.8.0-3bookworm) bookworm; urgency=high
+
+  * BREAKING CHANGE: major refactoring to comply to naming conventions
+  * improve cleanup of requested streams
+  * add support for http status code 429: too many requests
+  * improve error handling and messages
+  * add state getters for rc_dynamics, rc_slam, rc_stereo_ins
+  * return UNKNOWN if dynamics state is not accessible
+  * improve startup behaviour of RemoteInterface
+
+ -- Felix Ruess <felix.ruess@roboception.de>  Tue, 07 May 2019 16:00:00 -0000
+
+ros-humble-rc-dynamics-api (0.7.1-3bookworm) bookworm; urgency=high
+
+  * update cmake files for version and packaging
+
+ -- Felix Ruess <felix.ruess@roboception.de>  Sun, 03 Feb 2019 16:00:00 -0000
+
+ros-humble-rc-dynamics-api (0.7.0-3bookworm) bookworm; urgency=high
+
+  * add saveSlamMap, loadSlamMap and removeSlamMap methods
+  * getSlamTrajectory doesn't time out by default anymore
+
+ -- Felix Ruess <felix.ruess@roboception.de>  Sun, 01 Jul 2018 16:00:00 -0000
+
+ros-humble-rc-dynamics-api (0.6.0-3bookworm) bookworm; urgency=high
+
+  * add methods to access slam "reset" service
+  * use single json.hpp include instead of submodule
+
+ -- Felix Ruess <felix.ruess@roboception.de>  Wed, 18 Apr 2018 16:00:00 -0000
+
+ros-humble-rc-dynamics-api (0.5.0-3bookworm) bookworm; urgency=high
+
+  * Updates for rc_visard image version v1.1.x with support for SLAM
+  * added startSlam, restartSlam, stopSlam and getTrajectory
+  * support Windows build
+
+ -- Felix Ruess <felix.ruess@roboception.de>  Sun, 25 Feb 2018 16:00:00 -0000
+
+ros-humble-rc-dynamics-api (0.4.0-3bookworm) bookworm; urgency=high
+
+  * refactoring: simplified csv-printing in rcdynamics_stream tool
+  * refactoring: better exception handling
+  * refactoring: renaming, wording is now PbMsgType instead of ProtoType
+  * added '-l option' to rcdynamics_stream tool: list avail. streams
+  * improvements and bug fixes in cmake
+  * use rc_dynamics_msgs submodule
+
+ -- Felix Ruess <felix.ruess@roboception.de>  Tue, 26 Sep 2017 16:00:00 -0000
+
+ros-humble-rc-dynamics-api (0.3.0-3bookworm) bookworm; urgency=high
+
+  * start/stop rc_dynamics node instead of rc_stereo_ins
+  * don't start/stop rc_dynamics for imu stream
+
+ -- Felix Ruess <felix.ruess@roboception.de>  Tue, 05 Sep 2017 16:00:00 -0000
+
+ros-humble-rc-dynamics-api (0.2.1-3bookworm) bookworm; urgency=high
+
+  * bug fix: header not installed
+
+ -- Felix Ruess <felix.ruess@roboception.de>  Wed, 30 Aug 2017 16:00:00 -0000
+
+ros-humble-rc-dynamics-api (0.2.0-3bookworm) bookworm; urgency=high
+
+  * bug fix: wrong name of tool: vins_stream -> rcdynamics_stream
+
+ -- Felix Ruess <felix.ruess@roboception.de>  Tue, 29 Aug 2017 16:00:00 -0000
+
+ros-humble-rc-dynamics-api (0.1.0-3bookworm) bookworm; urgency=high
+
+  * Initial release
+
+ -- Felix Ruess <felix.ruess@roboception.de>  Mon, 28 Aug 2017 16:00:00 -0000
+
+

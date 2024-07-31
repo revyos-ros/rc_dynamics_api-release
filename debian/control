@@ -1,0 +1,13 @@
+Source: ros-humble-rc-dynamics-api
+Section: misc
+Priority: optional
+Maintainer: Felix Ruess <felix.ruess@roboception.de>
+Build-Depends: debhelper (>= 9.0.0), cmake, curl, libcurl4-openssl-dev, libprotobuf-dev, libprotoc-dev, protobuf-compiler, ros-humble-ros-workspace
+Homepage: http://rc-visard.com
+Standards-Version: 3.9.2
+
+Package: ros-humble-rc-dynamics-api
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, curl, libcurl4-openssl-dev, libprotobuf32, ros-humble-ros-workspace
+Description: The rc_dynamics_api provides an API for easy handling of the dynamic-state data streams provided by Roboception's stereo camera with self-localization.
+ See http://rc-visard.com Dynamic-state estimates of the rc_visard relate to its self-localization and ego-motion estimation. These states refer to rc_visard's current pose, velocity, or acceleration and are published on demand via several data streams. For a complete list and descriptions of these dynamics states and the respective data streams please refer to rc_visard's user manual.
